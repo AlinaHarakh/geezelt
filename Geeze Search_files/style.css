@@ -125,12 +125,12 @@ body {
 	margin: 0;
 }
 .links__items .button {
+	height: 100%;
 	background-color: transparent;
 	border: 1px solid #f6f6f6;
 	color: #FEA800;
 	padding: 10px 20px;
 	margin: 0;
-	height: 100%;
 	font-family: 'Jura', sans-serif;
 	font-size: 16px;
 	line-height: 18px;
@@ -228,4 +228,44 @@ body {
 	max-height: 250px;
 	object-fit: cover;
 	margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+	.wiki {
+	max-width: 230px;
+	}
+}
+@media (max-width: 650px) {
+	.wiki {
+		max-width: 180px;
+	}
+	.wiki-link {
+		font-size: 13px;
+		line-height:16px;
+	}
+	.header__inner {
+		flex-direction: column;
+		gap: 20px;
+	}
+	.logo {
+		width: auto;
+		max-width: 70%;
+	}
+	.searchbar {
+		max-width: 100%;
+		width: 100%;
+	}
+}
+
+@media (max-width: 560px) {
+	.logo {
+		max-width: 90%;
+	}
+	.content__inner {
+		flex-direction: column-reverse;
+	}
+	.wiki {
+		margin: 0px 0px 20px;
+		max-width: 100%;
+	}
 }
