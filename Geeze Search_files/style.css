@@ -121,12 +121,15 @@ body {
 	width: fit-content;
 	box-shadow: 4px 4px 16px #e1e1e166;
 	border-radius: 4px;
+	padding: 0;
+	margin: 0;
 }
 .links__items .button {
 	background-color: transparent;
 	border: 1px solid #f6f6f6;
 	color: #FEA800;
 	padding: 10px 20px;
+	margin: 0;
 	font-family: 'Jura', sans-serif;
 	font-size: 16px;
 	line-height: 18px;
