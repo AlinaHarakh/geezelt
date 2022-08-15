@@ -30,10 +30,13 @@
 				<a class="logo" href="#">
 					<img src="./Geeze Search_files/goGeeze.png" alt="logo" id="page">
 				</a>
-				<div class="searchbar">
-					<input class="searchbar-input" type="text" id="input" placeholder="Geeze It!">
-					<button class="reset-btn" id="button" type="reset"></button>
-				</div>
+				<form>
+					<div class="searchbar">
+						<input class="searchbar-input" type="text" id="input" placeholder="Geeze It!" pattern=".{1,}" required>
+						<button class="reset-btn" id="buttonReset" type="reset"></button>
+						<button class="searchbar-btn" id="button">Search</button>
+					</div>
+				</form>
 			</div>
 			<div class="links">
 				<div class="links__items">
@@ -103,6 +106,22 @@
 								<p class="desc">Answers you want. Content for days. What more could you Ask for?</p>
 							</a>
 						</div>
+						<nav class="nav">
+							<button class="start"></button>
+							<button class="prev">previous</button>
+							<ul class="nav-items">
+								<li class="nav-item"><button class="page-button">1</button></li>
+								<li class="nav-item"><button class="page-button">2</button></li>
+								<li class="nav-item"><button class="page-button page-button--active">3</button></li>
+								<li class="nav-item"><button class="page-button">4</button></li>
+								<li class="nav-item"><button class="page-button">5</button></li>
+								<li class="nav-item"><button class="page-button">6</button></li>
+								<li class="nav-item"><button class="page-button">7</button></li>
+								<li class="nav-item"><button class="page-button">8</button></li>
+								<li class="nav-item"><button class="page-button">9</button></li>
+							</ul>
+							<button class="next">next</button>
+						</nav>
 					</div>
 					<!-- ****************   THE ORIGINAL BLOCK  + classes needed  ********** -->
 					<!-- <div class="wiki" id="wiki">
