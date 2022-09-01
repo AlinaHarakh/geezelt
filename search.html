@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+	<meta name="description"
+		content="The first zero track search engine powered by open-source code that anyone can view or make suggestions to">
+	<meta name="keywords" content="Search engine, search, Geeze, Geeze It, GoGoGeeze">
+	<meta name="author" content="Samuel Tinnerholm">
+	<title>Geeze Search</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;600;700&family=Poppins&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="./Geeze Search_files/style.css">
+	<script src="./Geeze Search_files/search.js" defer=""></script>
+</head>
+
+<body id="body">
+	<!-- <div class="wrapper"> -->
+	<header class="header">
+		<div class="container">
+			<div class="header-inner">
+				<a class="logo" href="index.html">
+					<img src="./Geeze Search_files/goGeeze.png" alt="logo" id="page">
+				</a>
+				<form>
+					<div class="searchbar">
+						<input class="searchbar-input" type="text" id="input" placeholder="Geeze It!" pattern=".{1,}" required>
+						<button class="reset-btn" id="buttonReset" type="reset"></button>
+						<button class="searchbar-btn" id="button">Search</button>
+					</div>
+				</form>
+			</div>
+			<div class="links">
+				<div class="links__items">
+					<button class="button button--active" id="allSearch">All</button>
+					<button class="button" id="imageSearch">Images</button>
+					<button class="button" id="newsSearch">News</button>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="content">
+			<div class="container">
+				<div class="content-inner">
+					<div class="news">
+						<div class="result" id="result0">
+							<a href="https://geezeit.com/">
+								<p class="search-link">https://geezeit.com/</p>
+								<h2 class="title">geezeit.com | geezeIt</h2>
+								<p class="desc">NO RESULTS FOUND: geezeIt is in early development. If you can not find what
+									you are
+									looking for, you can try one of the following search engines: Google, Bing, Yahoo, DuckDuckGo, or
+									ask.com.</p>
+							</a>
+						</div>
+						<div class="result" id="result1">
+							<a href="https://google.com/">
+								<p class="search-link">https://google.com/</p>
+								<h2 class="title">google.com | Google</h2>
+								<p class="desc">Search the world's information, including webpages, images, videos and
+									more. Google
+									has many special features to help you find exactly what you're looking for.</p>
+							</a>
+						</div>
+						<div class="result" id="result2">
+							<a href="https://bing.com/">
+								<p class="search-link">https://bing.com/</p>
+								<h2 class="title">bing.com | Stunning symmetry</h2>
+								<p class="desc">Bing helps you turn information into action, making it faster and easier to
+									go from
+									searching to doing.</p>
+							</a>
+						</div>
+						<div class="result" id="result3">
+							<a href="https://yahoo.com/">
+								<p class="search-link">https://yahoo.com/</p>
+								<h2 class="title">yahoo.com | Yahoo | Mail, Weather, Search, Politics, News, Finance, Sports &amp;
+									Videos</h2>
+								<p class="desc">Latest news coverage, email, free stock quotes, live scores and video are
+									just the
+									beginning. Discover more every day at Yahoo!</p>
+							</a>
+						</div>
+						<div class="result" id="result4">
+							<a href="https://duckduckgo.com/">
+								<p class="search-link">https://duckduckgo.com/</p>
+								<h2 class="title">duckduckgo.com | DuckDuckGo — Privacy, simplified.</h2>
+								<p class="desc">The Internet privacy company that empowers you to seamlessly take control
+									of your
+									personal information online, without any tradeoffs.</p>
+							</a>
+						</div>
+						<div class="result" id="result5">
+							<a href="https://ask.com/">
+								<p class="search-link">https://ask.com/</p>
+								<h2 class="title">ask.com | Home</h2>
+								<p class="desc">Answers you want. Content for days. What more could you Ask for?</p>
+							</a>
+						</div>
+						<nav class="nav">
+							<button class="start"></button>
+							<button class="prev">previous</button>
+							<ul class="nav-items">
+								<li class="nav-item"><button class="page-button">1</button></li>
+								<li class="nav-item"><button class="page-button">2</button></li>
+								<li class="nav-item"><button class="page-button page-button--active">3</button></li>
+								<li class="nav-item"><button class="page-button">4</button></li>
+								<li class="nav-item"><button class="page-button">5</button></li>
+								<li class="nav-item"><button class="page-button">6</button></li>
+								<li class="nav-item"><button class="page-button">7</button></li>
+								<li class="nav-item"><button class="page-button">8</button></li>
+								<li class="nav-item"><button class="page-button">9</button></li>
+							</ul>
+							<button class="next">next</button>
+						</nav>
+					</div>
+					<!-- ****************   THE ORIGINAL BLOCK  + classes needed  ********** -->
+					<!-- <div class="wiki" id="wiki">
+						<h1 id="wikititle"></h1>
+						<p id="wikidescription"></p>
+						<a class="wiki-link" href="#"><img id="wikiimage" src="http://localhost:8080/search?search=hauihjfiorjsigjgijsr&amp;page=1"></a>
+						<a class="wiki-link" href="#" id="wikiurl"></a>
+				</div>
+				<div class="graySpace"></div> -->
+					<!-- ****************   THE EXAMPLE BLOCK To show the block view  ********** -->
+					<div class="wiki" id="wiki">
+						<h1 id="wikititle">Example Title</h1>
+						<p id="wikidescription">example text Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ullam vel minus?
+							ullam, cum illo</p>
+						<a class="wiki-link" href="#"><img id="wikiimage" src="./Geeze Search_files/image.jpg" alt="image"></a>
+						<a class="wiki-link" href="#" id="wikiurl">https://askkdlk.com/</a>
+					</div>
+					<div class="graySpace"></div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+</body>
+
+</html>

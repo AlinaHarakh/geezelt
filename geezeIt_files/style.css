@@ -1,0 +1,238 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+	margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+input, select {
+	vertical-align:middle;
+}
+html,
+body {
+	height: 100%;
+}
+/* body */
+body {
+	background-color: #fefefe;
+	box-sizing: border-box;
+	font-family: 'Jura', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	margin: 0;
+	color: #000;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.container {
+	max-width: 1120px;
+	padding: 0px 10px;
+	margin: 0px auto;
+}
+main {
+	flex: 1 1 auto;
+}
+.header {
+	padding-top: 20vh;
+}
+.logo {
+	max-width: 50%;
+	margin: 0px auto 75px;
+}
+.logo img {
+	width: 100%;
+}
+.searchbar {
+	max-width: 670px;
+	margin: 0px auto;
+	height: 48px;
+	box-shadow: rgb(225, 225, 225) 4px 4px 16px;
+	border: 1px solid #f6f6f6;
+	border-radius: 4px;
+	padding: 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #fff;
+	margin-bottom: 70px;
+}
+.searchbar:hover,
+.searchbar:focus-within {
+	box-shadow: rgb(237 237 237) 4px 4px 4px;
+	border: 1px solid #f5f5f5;
+}
+.searchbar-input {
+	width: 100%;
+	height: 48px;
+	border: none;
+	background-color: transparent;
+	padding: 0 20px 0 30px;
+	outline: none;
+	font-family: 'Jura', sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 600;
+	border-radius: 4px;
+	margin: 0;
+}
+.searchbar-btn {
+	height: 48px;
+	padding: 17px 56px 0 0;
+	background-color: #fff;
+	color: #000;
+	border: none;
+	border-radius: 0 4px 4px 0px;
+	font-size: 0px;
+	line-height: 20px;
+	font-family: 'Jura', sans-serif;
+	font-weight: 700;
+	transition: all 0.6s;
+	cursor: pointer;
+	position: relative;
+	height: 100%;
+	border: none;
+}
+.searchbar-btn::after {
+	content: '';
+	position: absolute;
+	top: 0px;
+	right: -1px;
+	left: 0%;
+	bottom: -1px;
+	background-color: #FEA800;
+	clip-path: polygon(33% 0, 100% 0, 100% 100%, 0% 100%);
+	border-radius: 0 4px 4px 0;
+}
+.searchbar-btn::before{
+	content: '';
+	position: absolute;
+	top: 15px;
+	right: 17px;
+	bottom: 0;
+	width: 22px;
+	background-image: url(../geezeIt_files/search.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	z-index: 2;
+}
+.searchbar-btn:hover {
+	background-color: #FEA800;
+  color: white;
+	box-shadow: none;
+}
+/*Reset button is hidden if the textfield is empty*/
+#input:invalid + #buttonReset {
+	display: none;
+  pointer-events: none;
+}
+.reset-btn {
+	display: block;
+	height: 100%;
+	padding: 10px 16px 10px;
+	align-self: center;
+	position: relative;
+	background-color: inherit;
+	border: none;
+	cursor: pointer;
+	border-radius: 0 4px 4px 0;
+	margin-right: 6px;
+}
+.reset-btn::before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	transform: translateX(-11px);
+	right: 0px;
+	top: 13px;
+	width: 22px;
+	height: 22px;
+	background-image: url(close.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.footer {
+	margin: 0px auto;
+	background-color: #EDEDED;
+	padding: 20px 0;
+	width: 100%;
+}
+.footer-links {
+	font-size: 14px;
+	line-height: 18px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	color: #5989CA;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all 0.5s;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+.footer-links a:hover {
+	color: #FF914D;
+}
+.copywright {
+	text-align: center;
+	font-size: 14px;
+	line-height: 18px;
+	color: #716f6f;
+	margin: 0;
+}
+
+@media (max-width: 1000px) {
+	.logo {
+		max-width: 60%;
+	}
+}
+@media (max-width: 790px) {
+	.logo {
+		max-width: 70%;
+	}
+	.searchbar {
+		max-width: 90%;
+	}
+}
+@media (max-width: 620px) {
+	.logo {
+		max-width: 80%;
+	}
+}
+@media (max-width: 530px) {
+	.searchbar {
+		max-width: 100%;
+	}
+	.searchbar-input {
+		width: 90%;
+	}
+	.searchbar-btn{
+    padding: 17px 56px 0 0;
+    font-size: 0px;
+		height: 100%;
+		border: none;
+	}
+	.searchbar-btn::after {
+		left: 0%;
+		clip-path: polygon(33% 0, 100% 0, 100% 100%, 0% 100%);
+		right: -1px;
+		bottom: -1px;
+	}
+	.searchbar-btn::before {
+    right: 17px;
+	}
+	.logo {
+    max-width: 90%;
+		margin: 0px auto 50px;
+	}
+}
